@@ -1,4 +1,29 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch
+} from "react-router-dom";
+
+function MyLink({ label, to,img,alt,img1,alt1, activeOnlyWhenExact }) {
+  let match = useRouteMatch({
+    path: to,
+    exact: activeOnlyWhenExact
+  });
+
+  return (
+    <div className={match ? "menu-item active" : "menu-item"}>
+      {match && "> "}
+      <Link to={to}>
+        <img src={img} alt={alt} />
+        <p>{label}</p>
+        <img src={img1} alt={alt1} />
+      </Link>
+    </div>
+  );
+}
 
 class MainMenu extends Component {
     render() {
@@ -8,42 +33,13 @@ class MainMenu extends Component {
               <li className="menu-item">
                 <img src="./assets/menu.svg" alt="menu" className="menu-icon" />
               </li>
-              <li className="menu-item active">
-                <a href="/index.html">
-                  <img src="./assets/transaction.svg" alt="transaction" />
-                  <p>Sổ giao dịch</p>
-                </a>
-              </li>
-              <li className="menu-item">
-                <a href="/bao-cao.html">
-                  <img src="./assets/report.svg" alt="report" />
-                  <p>Báo cáo</p>
-                </a>
-              </li>
-              <li className="menu-item">
-                <a href="/ngan-sach.html">
-                  <img src="./assets/budget.svg" alt="budget" />
-                  <p>Ngân sách</p>
-                </a>
-              </li>
-              <li className="menu-item">
-                <a href="/cua-hang.html">
-                  <img src="./assets/cart.svg" alt="cart" />
-                  <p>
-                    Cửa hàng
-                    <img src="./assets/extend.svg" alt="extend" />
-                  </p>
-                </a>
-              </li>
-              <li className="menu-item">
-                <a href="/tro-giup.html">
-                  <img src="./assets/help.svg" alt="help" />
-                  <p>
-                    Trợ giúp
-                    <img src="./assets/extend.svg" alt="extend" />
-                  </p>
-                </a>
-              </li>
+
+              <MyLink to="/sogiaodich" label="Sổ giao dịch" img="./assets/transaction.svg" alt="transaction"></MyLink>
+              <MyLink to="/baocao" label="Báo cáo" img="./assets/report.svg" alt="report"></MyLink>
+              <MyLink to="/ngansach" label="Ngân sách " img="./assets/budget.svg" alt="budget"></MyLink>
+              <MyLink to="/cuahang" label="Cửa Hàng " img="./assets/cart.svg" alt="cart" img1="./assets/extend.svg" alt="extend"></MyLink>
+              <MyLink to="/trogiup" label="Trợ giúp " img="./assets/help.svg" alt="help" img1="./assets/extend.svg" alt="extend"></MyLink>
+              
             </ul>
           </div>
         );

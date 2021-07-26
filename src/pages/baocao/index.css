@@ -1,0 +1,215 @@
+.container .report {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container .report .income {
+    color: #039be5;
+  }
+  .container .report .expense {
+    color: red;
+  }
+  .container .report-left {
+    width: 40%;
+    background: white;
+    box-shadow: 0 0 5px gray;
+    margin-right: 20px;
+  }
+  .container .report-left .balance {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-around;
+    border-bottom: 1px solid #dadada;
+  }
+  .container .report-left .balance-amount {
+    font-weight: bold;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .container .report-left .balance-start, .container .report-left .balance-end {
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+  }
+  .container .report-left .chart-header {
+    padding: 15px 0px;
+  }
+  .container .report-left .chart-title {
+    text-align: center;
+  }
+  .container .report-left .chart-title .title-bar {
+    font-size: 14px;
+  }
+  .container .report-left .chart-title .amount-bar {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .container .report-left .chart-body {
+    text-align: center;
+  }
+  .container .report-left .chart-body-img {
+    width: 80%;
+    height: 250px;
+  }
+  .container .report-left .donut-chart {
+    display: flex;
+    flex: 1 1;
+  }
+  .container .report-left .donut-chart .income, .container .report-left .donut-chart .outcome {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  .container .report-left .donut-chart .income img, .container .report-left .donut-chart .outcome img {
+    width: 80%;
+    height: 200px;
+  }
+  .container .report-left .donut-chart .income:hover, .container .report-left .donut-chart .outcome:hover {
+    box-shadow: 0 0 5px gray;
+  }
+  .container .report-left .debt-loan ul {
+    list-style: none;
+  }
+  .container .report-left .debt-loan ul li {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e2dede;
+    padding: 10px 20px;
+    cursor: pointer;
+    align-items: center;
+  }
+  .container .report-left .debt-loan ul li .right-chevron {
+    height: 15px;
+    width: 15px;
+  }
+  .container .report-left .debt-loan ul li span {
+    display: flex;
+  }
+  .container .report-left .debt-loan ul li span img {
+    margin-left: 20px;
+  }
+  .container .report-left .debt-loan ul li:hover {
+    background: #ece9e9;
+  }
+  .container .report-right, .container .report-detail {
+    width: 55%;
+    background: white;
+    box-shadow: 0 0 5px gray;
+    margin-right: 10px;
+    position: relative;
+    z-index: 500;
+    overflow-x: hidden;
+  }
+  .container .report-right .header, .container .report-detail .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0dbdb;
+    padding: 0px 20px;
+  }
+  .container .report-right .header-left, .container .report-detail .header-left {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+  }
+  .container .report-right .header-left p, .container .report-detail .header-left p {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #424040;
+  }
+  .container .report-right .header-right, .container .report-detail .header-right {
+    display: flex;
+    justify-content: center;
+  }
+  .container .report-right .header-right .display-type, .container .report-detail .header-right .display-type {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    height: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid transparent;
+  }
+  .container .report-right .header-right .display-type img, .container .report-detail .header-right .display-type img {
+    height: 25px;
+    width: 25px;
+  }
+  .container .report-right .header-right .display-type.active, .container .report-detail .header-right .display-type.active {
+    border-bottom: 2px solid #1aa333;
+  }
+  .container .report-right .header-right .display-type:hover, .container .report-detail .header-right .display-type:hover {
+    border-bottom: 2px solid #1aa333;
+  }
+  .container .report-right .chart-content, .container .report-detail .chart-content {
+    display: flex;
+    flex: 2 1;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #e2dfdf;
+  }
+  .container .report-right .chart-content .chart, .container .report-detail .chart-content .chart {
+    padding: 30px 20px;
+  }
+  .container .report-right .chart-content .chart img, .container .report-detail .chart-content .chart img {
+    height: 100%;
+    width: 100%;
+  }
+  .container .report-right .chart-content .amount, .container .report-detail .chart-content .amount {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e51c23;
+  }
+  .container .report-right .category-list ul, .container .report-detail .category-list ul {
+    list-style: none;
+  }
+  .container .report-right .category-list ul .category-item, .container .report-detail .category-list ul .category-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    border-bottom: 1px solid #d8d5d5;
+    cursor: pointer;
+    padding: 20px 40px;
+  }
+  .container .report-right .category-list ul .category-item label, .container .report-detail .category-list ul .category-item label {
+    cursor: pointer;
+  }
+  .container .report-right .category-list ul .category-item:hover, .container .report-detail .category-list ul .category-item:hover {
+    background: rgba(207, 207, 207, 0.4);
+  }
+  .container .report-right .category-list ul .category-item span, .container .report-detail .category-list ul .category-item span {
+    display: flex;
+    align-items: center;
+  }
+  .container .report-right .category-list ul .category-item .item-left img, .container .report-detail .category-list ul .category-item .item-left img {
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+  }
+  .container .report-right .category-list ul .category-item .item-right img, .container .report-detail .category-list ul .category-item .item-right img {
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+  }
+  .container .report-detail {
+    position: absolute;
+    transform: translateX(200%);
+    height: 100%;
+    width: 100%;
+    z-index: 510;
+    left: 0;
+    top: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .container .report-detail.active {
+    display: block;
+    visibility: visible;
+    transform: translateX(0%);
+    transition: 0.5s ease-in-out;
+  }
+  .container .report-detail #back-icon {
+    cursor: pointer;
+  }
+  

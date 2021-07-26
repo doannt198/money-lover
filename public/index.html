@@ -18,6 +18,50 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const menuIcons = document.querySelectorAll('.menu-icon');
+          const sideBar = document.querySelector('.sidebar');
+          menuIcons.forEach(menu => {
+              menu.addEventListener('click', function () {
+                  if (sideBar.classList.contains('active')) {
+                      sideBar.classList.remove('active');
+                  } else {
+                      sideBar.classList.add('active');
+                  }
+              })
+          })
+
+
+          window.addEventListener('click', function(e){  
+              document.getElementById('wallets').classList.remove('active');
+          });
+
+          // Mở khi click wallet
+          document.querySelector('.wallet-name').addEventListener('click', function(e) {
+              document.getElementById('wallets').classList.add('active');
+              e.stopPropagation();
+          });
+
+          // Xử lí hiển thị transaction detail
+          const mainLeft = document.querySelector('.main-left');
+          const mainRight = document.querySelector('.main-right');
+          const transactionDetails = document.querySelectorAll('.transaction-detail .item');
+          const closeDetail = document.querySelector('.close-detail');
+          transactionDetails.forEach(transaction => {
+              transaction.addEventListener('click', function(e) {
+                  mainLeft.classList.add('active');
+                  mainRight.classList.add('active');
+              });
+          })
+
+          if (closeDetail) {
+              closeDetail.addEventListener('click', function(e) {
+                  mainRight.classList.remove('active');
+                  mainLeft.classList.remove('active');
+              })
+          }
+      })
+  </script>
   </body>
 </html>
