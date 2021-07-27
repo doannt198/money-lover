@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './index.css'
 class ViCuaToi extends Component {
     render() {
         return (

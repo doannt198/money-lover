@@ -1,0 +1,106 @@
+.container .manage-account {
+    max-width: 600px;
+    background: white;
+    margin: 20px auto;
+  }
+  .container .manage-account-header {
+    padding: 20px;
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .manage-account-header h2 {
+    font-size: 20px;
+  }
+  .container .manage-account-header .icon-close {
+    cursor: pointer;
+  }
+  .container .manage-account .btn-logout {
+    color: #2db84c;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  .container .manage-account .btn-logout:hover {
+    background: rgba(17, 209, 58, 0.2);
+  }
+  .container .manage-account-account {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+    border-top: 1px solid #ccc7c7;
+  }
+  .container .manage-account-account img {
+    height: 80px;
+    width: 80px;
+  }
+  .container .manage-account-upgrade {
+    position: relative;
+    text-align: center;
+  }
+  .container .manage-account-upgrade .background {
+    height: 150px;
+    background: #f07700;
+  }
+  .container .manage-account-upgrade .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  .container .manage-account-upgrade .content label {
+    color: white;
+    font-weight: bold;
+  }
+  .container .manage-account-upgrade .content .btn-upgrade {
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 5px #5a5a5a;
+    margin: 15px 0px;
+    border-radius: 5px;
+    color: #f07700;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .container .manage-account .devices {
+    padding: 20px;
+  }
+  .container .manage-account .devices .title {
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 16px;
+  }
+  .container .manage-account .devices ul {
+    list-style: none;
+  }
+  .container .manage-account .devices ul li {
+    padding: 10px 0px;
+    display: flex;
+    flex: 1 auto;
+    align-items: center;
+    cursor: pointer;
+  }
+  .container .manage-account .devices ul li .device-info {
+    margin-left: 20px;
+    padding: 10px 0px;
+    border-bottom: 1px solid #dad7d7;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container .manage-account .devices ul li:hover {
+    background: rgba(4, 221, 4, 0.2);
+  }
+  .container .manage-account .remove-account {
+    padding: 20px;
+    cursor: pointer;
+    text-align: right;
+  }
+  .container .manage-account .remove-account:hover {
+    color: #5a5a5a;
+  }

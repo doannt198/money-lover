@@ -1,0 +1,90 @@
+body {
+    box-sizing: border-box;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#00710f 314px, #ebebeb -100%);
+    min-height: 100vh;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 100vh;
+    max-width: 100%;
+    position: relative;
+  }
+  .container-wrapper .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 54px;
+    margin-bottom: 34px;
+  }
+  .container-wrapper .login {
+    display: flex;
+    justify-content: center;
+    color: #707070;
+  }
+  .container-wrapper .login-wrapper {
+    background-color: white;
+    box-shadow: 0 0 5px gray;
+    border-radius: 20px;
+    width: 450px;
+    padding: 34px 40px 40px;
+    text-align: center;
+  }
+  .container-wrapper .login-contain {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 60px;
+  }
+  .container-wrapper .login-contain input {
+    border: none;
+    font-size: 14px;
+    padding: 10px 5px;
+    margin: 40px 0px;
+  }
+  .container-wrapper .login-contain .btn {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 15px 5px 0px;
+    background: #01881e;
+    border: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .container-wrapper .login-contain a {
+    text-decoration: none;
+    color: #01881e;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .container-wrapper .logo {
+      display: flex;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    .container-wrapper .logo img {
+      height: 150px;
+      width: 150px;
+    }
+    .container-wrapper .login-contain {
+      padding: 40px;
+      padding-top: 0px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  /*# sourceMappingURL=quen-mat-khau.css.map */
+  

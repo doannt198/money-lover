@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './index.css'
 class LienKetNganHang extends Component {
     render() {
         return (

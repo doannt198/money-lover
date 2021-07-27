@@ -1,0 +1,63 @@
+.container .bank {
+    width: 100%;
+    background: white;
+    margin: 20px;
+    padding: 20px 40px;
+  }
+  .container .bank .bank-link {
+    margin: 20px 40px;
+  }
+  .container .bank .bank-link input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #dad7d7;
+  }
+  .container .bank .bank-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 20px;
+    width: 100px;
+    box-shadow: 0 0 3px gray;
+    margin: 0px 5px;
+  }
+  .container .bank .bank-item img {
+    height: 65px;
+    width: 65px;
+  }
+  .container .bank .bank-item .country {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .container .bank .bank-list {
+    display: flex;
+    overflow-x: scroll;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .bank .bank-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 400px;
+      grid-auto-flow: column;
+      grid-gap: 0 50px;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+    }
+    .bank .bank-list::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    .bank .bank-list > * {
+      scroll-snap-align: start;
+      width: 100%;
+    }
+  }

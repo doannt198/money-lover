@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 class Sidebar extends Component {
     render() {
         return (
@@ -16,7 +21,7 @@ class Sidebar extends Component {
             </div>
             <ul className="menu-list">
               <li>
-                <a href="/quan-li-tai-khoan.html">
+                <Link to="/quanlytaikhoan">
                   <img
                     src="./assets/person.svg"
                     alt="person"
@@ -30,10 +35,10 @@ class Sidebar extends Component {
                       className="chevron"
                     />
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="./vi-cua-toi.html">
+                <Link to="/vicuatoi">
                   <img
                     src="./assets/wallet.svg"
                     alt="wallet"
@@ -47,10 +52,10 @@ class Sidebar extends Component {
                       className="chevron"
                     />
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/nhom.html">
+                <Link to="/nhom">
                   <img
                     src="./assets/package.svg"
                     alt="package"
@@ -64,10 +69,10 @@ class Sidebar extends Component {
                       className="chevron"
                     />
                   </div>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/lien-ket-ngan-hang.html">
+                <Link to="/lienketnganhang">
                   <img src="./assets/link.svg" alt="link" className="icon" />
                   <div className="menu-info">
                     <label>Liên kết ngân hàng</label>
@@ -77,7 +82,7 @@ class Sidebar extends Component {
                       className="chevron"
                     />
                   </div>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

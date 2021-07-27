@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+import {
+  Link
+} from "react-router-dom";
 class HeaderWrap extends Component {
     render() {
         return (
@@ -65,9 +67,9 @@ class HeaderWrap extends Component {
                   <img src="./assets/search.svg" alt="search" />
                 </div>
                 <div className="method-item">
-                  <a href="/them-moi.html" className="btn btn-add-transaction">
+                  <Link to="/themmoi" className="btn btn-add-transaction">
                     Thêm giao dịch
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

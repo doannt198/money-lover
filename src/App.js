@@ -9,6 +9,11 @@ import MainMenu from './components/mainmenu';
  import NganSach from './pages/ngansach';
  import CuaHang from './pages/cuahang';
  import TroGiup from './pages/trogiup';
+ import QuanLyTaiKhoan from './pages/quanlytaikhoan';
+ import ViCuaToi from './pages/vicuatoi';
+ import Nhom from './pages/nhom';
+ import LienKetNganHang from './pages/lienketnganhang';
+ import ThemMoi from './pages/themmoi';
  import {
   BrowserRouter as Router,
   Switch,
@@ -43,6 +48,21 @@ import MainMenu from './components/mainmenu';
           </Route>
           <Route path="/trogiup">
             <TroGiup/>
+          </Route>
+          <Route path="/quanlytaikhoan">
+            <QuanLyTaiKhoan />
+          </Route>
+          <Route path="/vicuatoi">
+            <ViCuaToi/>
+          </Route>
+          <Route path="/nhom">
+            <Nhom/>
+          </Route>
+          <Route path="/lienketnganhang">
+            <LienKetNganHang/>
+          </Route>
+          <Route path="/themmoi">
+            <ThemMoi/>
           </Route>
         </Switch>
           </div>

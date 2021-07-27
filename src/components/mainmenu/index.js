@@ -18,8 +18,9 @@ function MyLink({ label, to,img,alt,img1,alt1, activeOnlyWhenExact }) {
       {match && "> "}
       <Link to={to}>
         <img src={img} alt={alt} />
-        <p>{label}</p>
-        <img src={img1} alt={alt1} />
+       
+        <p>{label} <img src={img1} alt={alt1} /></p>
+      
       </Link>
     </div>
   );

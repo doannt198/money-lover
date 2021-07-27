@@ -1,0 +1,206 @@
+.container .transaction-add {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.container .transaction-add .add-transaction {
+  max-width: 850px;
+  border-radius: 10px;
+  background: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+.container .transaction-add .add-transaction .title {
+  padding: 20px 0px;
+  border-bottom: 1px solid #d1d0d0;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.container .transaction-add .add-transaction form {
+  padding: 20px;
+}
+.container .transaction-add .add-transaction .form-input-group {
+  border: 1px solid #ccc8c8;
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  height: 64px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.container .transaction-add .add-transaction .form-input-group.image {
+  height: 100%;
+}
+.container .transaction-add .add-transaction .form-input-group .right-chevron {
+  width: 15px;
+  height: 15px;
+}
+.container .transaction-add .add-transaction .form-input-group .select-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .transaction-add .add-transaction .form-input-group .select-item--icon {
+  flex: 1;
+  height: 20px;
+  width: 20px;
+}
+.container .transaction-add .add-transaction .form-input-group .select-item--right {
+  flex: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .transaction-add .add-transaction .form-input-group .select-item input {
+  width: 100%;
+  border: none;
+  padding: 3px 0px;
+}
+.container .transaction-add .add-transaction .not-include-report {
+  display: flex;
+  padding: 20px 0px;
+}
+.container .transaction-add .add-transaction .not-include-report input {
+  margin-right: 20px;
+}
+.container .transaction-add .add-transaction .not-include-report .report-title {
+  font-weight: bold;
+  color: rgba(56, 55, 55, 0.87);
+  margin-bottom: 10px;
+}
+.container .transaction-add .add-transaction .btn {
+  background: #2db84c;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.container .transaction-add .add-transaction .btn-default {
+  background: white;
+  color: #2db84c;
+}
+.container .transaction-add .add-transaction .btn-wrapper {
+  text-align: right;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row .col-md-3 {
+  width: 25%;
+}
+.row .col-md-4 {
+  width: 33.33%;
+}
+.row .col-md-6 {
+  width: 50%;
+}
+.row .col-md-8 {
+  width: 66.67%;
+}
+.row .col-md-9 {
+  width: 75%;
+}
+.row .col-md-12 {
+  width: 100%;
+}
+
+.dropdown {
+  height: 64px;
+  margin: 5px;
+  width: 240px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.dropdown-title {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.dropdown-menu {
+  height: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 8px 12px 9px 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+.dropdown-menu:hover {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.dropdown-menu .icon-chevron {
+  height: 15px;
+  width: 15px;
+}
+.dropdown-item {
+  display: flex;
+  flex: 1 1 auto;
+  height: 24px;
+  align-items: center;
+}
+.dropdown-item--icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.dropdown-item--text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-item--text label {
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 24px;
+  font-size: 16px !important;
+  font-weight: 400;
+}
+.dropdown-body {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 105%;
+}
+.dropdown-body.active {
+  display: block;
+}
+.dropdown-body .items {
+  box-shadow: 0px 10px 10px 7px rgba(0, 0, 0, 0.3);
+  background: white;
+}
+.dropdown-body .item {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+}
+.dropdown-body .item:hover {
+  box-shadow: 0 0 3px gray;
+}
+.dropdown-body .item-icon {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+.dropdown-body .item-name {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  margin: 5px 0px;
+}
+.dropdown-body .item-value {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.54);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+}
